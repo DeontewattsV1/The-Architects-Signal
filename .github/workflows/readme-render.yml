@@ -1,0 +1,26 @@
+name: Render README Front Page
+
+on:
+  push:
+    paths:
+      - README.config.json
+      - scripts/generate-readme.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run readme:build
+      - name: Commit generated README assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: render README front page"
+          file_pattern: README.md assets/readme-hero.svg
