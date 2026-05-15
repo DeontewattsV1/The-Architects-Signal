@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "readme:build": "node scripts/generate-readme.mjs",
+    "readme:check": "node scripts/generate-readme.mjs && git diff --exit-code README.md assets/readme-hero.svg"
+  },
+  "devDependencies": {}
+}
