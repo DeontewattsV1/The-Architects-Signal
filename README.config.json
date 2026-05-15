@@ -1,0 +1,34 @@
+{
+  "brand": "GoodShyt Generative Systems",
+  "title": "ARCHITECT'S SIGNAL",
+  "subtitle": "Mission: Reclamation via Open Science Infrastructure",
+  "name": "Deonte Watts",
+  "affiliation": "Independent Researcher",
+  "orcid": "0009-0005-8586-3650",
+  "website": "https://deontewatts.space",
+  "mission": "A public research identity hub for manuscripts, citation records, DOI releases, authority profiles, and open-science publishing workflows. Architecting justice engines through code and community-centered design.",
+  "status": "Operational",
+  "theme": {
+    "background": "#050505",
+    "cyan": "#00FFFF",
+    "magenta": "#FF00FF",
+    "purple": "#BD00FF",
+    "gold": "#FFD166"
+  },
+  "profiles": [
+    { "label": "DeonteWatts.Space", "url": "https://deontewatts.space", "role": "Canonical Hub" },
+    { "label": "ORCID", "url": "https://orcid.org/0009-0005-8586-3650", "role": "Research Identifier" },
+    { "label": "GitHub", "url": "https://github.com/DeontewattsV1", "role": "Code Source" },
+    { "label": "Zenodo", "url": "https://zenodo.org/deontewatts", "role": "DOI Archive" },
+    { "label": "Academia.edu", "url": "https://deontewatts.academia.edu", "role": "Research Mirror" },
+    { "label": "FAIRsharing", "url": "https://fairsharing.org/users/17334", "role": "Standards Profile" }
+  ],
+  "workflow": [
+    { "step": "01", "label": "AUTHOR", "description": "Write in manuscript/main.tex and keep bibliography in bibliography/references.bib." },
+    { "step": "02", "label": "RELEASE", "description": "Create a GitHub release with a semantic version tag such as v1.0.0." },
+    { "step": "03", "label": "ARCHIVE", "description": "Zenodo ingests the enabled GitHub release and creates a DOI." },
+    { "step": "04", "label": "SYNC", "description": "DataCite receives DOI metadata with ORCID creator metadata." },
+    { "step": "05", "label": "MIRROR", "description": "Mirror DOI links to Academia.edu, alphaXiv, Zotero, and profile pages." },
+    { "step": "06", "label": "PROMOTE", "description": "Cloudflare Pages rebuilds the public research hub from GitHub." }
+  ]
+}
